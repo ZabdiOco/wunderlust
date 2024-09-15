@@ -10,10 +10,12 @@
 <body>
     <header>
         <h1>Wunderlust Travel</h1>
-        <img 
-        src="logo-S.png"
-        srcset="logo-M.png 1.5x, logo-L.png 2x"
-        alt="">
+        <picture>
+            <source media="(min-width: 480px)" srcset="/images/logo-S.png">
+            <source media="(min-width: 900px)" srcset="/images/logo-M.png">
+            <source media="(min-width: 1200px)" srcset="/images/logo-L.png">
+            <img src="/images/logo-S.png" alt="">
+        </picture>
         <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
 
         <nav>
@@ -29,6 +31,23 @@
     <main>
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
+        <img
+        src="/images/majorca-waves-S.png"
+        srcset="/images/majorca-waves-M.png 2x, /images/majorca-waves-L.png 3x"
+        alt=""
+        >
+
+        <img
+        src=""
+        srcset=""
+        alt=""
+        >
+
+        <img
+        src=""
+        srcset=""
+        alt=""
+        >
     </main>
 
     <footer>
