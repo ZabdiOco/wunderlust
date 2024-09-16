@@ -8,42 +8,58 @@
 </head>
 
 <body>
+    <a href="#maincontent">Skip to Main Content</a>
     <header>
         <h1>Wunderlust Travel</h1>
-        <picture>
-            <source media="(min-width: 480px)" srcset="/images/logo-S.png">
-            <source media="(min-width: 900px)" srcset="/images/logo-M.png">
-            <source media="(min-width: 1200px)" srcset="/images/logo-L.png">
-            <img src="/images/logo-S.png" alt="Blue waves with bright yellow sun and palm trees">
-        </picture>
+        <img
+        srcset="
+        /images/logo-S.png 320w,
+        /images/logo-M.png 780w,
+        /images/logo-L.png 1024w"
+        sizes="100vmax"
+        src="/images/logo-S.png"
+        alt="Blue waves with bright yellow sun and palm tree">
         <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
 
         <nav>
             <ul>
                 <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#Inspirations">Inspirations</a></li>
-                <li><a href="#Special">Special</a></li>
+                <li><a href="#">Inspirations</a></li>
+                <li><a href="#">Special</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="maincontent">
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
+
         <img
-        src="/images/majorca-waves-S.png"
-        srcset="/images/majorca-waves-M.png 2.0x,/images/majorca-waves-L.png 3.0x"
+        srcset="
+        images/majorca-waves-S.png 320w,
+        images/majorca-waves-M.png 780w,
+        images/majorca-waves-L.png 1024w"
+        sizes="100vmax"
+        src="images/majorca-waves-S.png"
         alt="Rocky clifside view of turquoise ocean">
 
         <img
+        srcset="
+        /images/majorca-beach-S.png 320w,
+        /images/majorca-beach-M.png 780w,
+        /images/majorca-beach-L.png 1024w"
+        sizes="100vmax"
         src="/images/majorca-beach-S.png"
-        srcset="/images/majorca-beach-M.png 2.0x,/images/majorca-beach-L.png 3.0x"
         alt="White sand beach surrounded by two cliffsides">
 
         <img
+        srcset="
+        /images/majorca-cove-S.png 320w,
+        /images/majorca-cove-M.png 780w,
+        /images/majorca-cove-L.png 1024w"
+        sizes="100vmax"
         src="/images/majorca-cove-S.png"
-        srcset="/images/majorca-cove-M.png 2.0x,/images/majorca-cove-S.png 3.0x"
         alt="Wide-angled shot of Majorca cove with green trees and rocky cliffsides">
 
         <h3>Plan Your Trip</h3>
@@ -168,12 +184,12 @@
         </svg>
         <p>Population: 923,608</p>
 
-    <h2>Contact Us</h2>
+    <h2 id="contact">Contact Us</h2>
     <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        <label for="Fname">First Name</label>
+        <label>First Name</label>
         <input type="text" required>
 
-        <label for="Lname">Last Name</label>
+        <label>Last Name</label>
         <input type="text" required>
 
         <fieldset>
@@ -185,7 +201,7 @@
                     <option value="">Select preferred contact method</option>
                     <option value="Phone">Phone</option>
                     <option value="SMS/Text Message">SMS/Text Message</option>
-                    <option type="Email">Email</option>
+                    <option value="Email">Email</option>
                 </select>
             </datalist>
 
@@ -211,8 +227,6 @@
                     <option value="Seville">Seville</option>
                     <option value="Tenerife">Tenerife</option>
                     <option value="Valencia">Valencia</option>
-                    <option value=""></option>
-                    <option value=""></option>
                 </select>
             </datalist>
 
