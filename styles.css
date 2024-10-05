@@ -1,0 +1,212 @@
+/* Zabdi Ocotlan */
+
+/* CSS RESET CODE
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue:#499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+    font-family: "Molle", system-ui, sans-serif;
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    color: var(--black);
+    line-height: 1.5em;
+}
+
+header{
+    width: 100%;
+    background-image: linear-gradient(var(--teal), var(--white));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 1rem;
+}
+
+#logo{
+    padding: 0;
+}
+
+header img{
+    display: block;
+	width: 100%;
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+a{
+    display: block;
+    padding: 1rem;
+    color: var(--black);
+}
+
+h1, h2, h3, h4{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    font-family: "Molle", system-ui, sans-serif;
+}
+
+h2{
+    font-family: "Molle", system-ui, sans-serif;
+    font-size: 1.75rem;
+    margin: 1.2rem 0;
+}
+
+h3{
+    font-family: "Molle", system-ui, sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+/* SKIP LINKS & SR ONLY */
+
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+ 
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/* HAMBURGER MENU */
+
+nav {
+    background: var(--teal);
+    color: var(--black);
+    width: 100%;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 0;
+}
+
+label {
+    display: block;
+    padding: 1rem 2.75rem;
+    background: var(--yellow);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+}
+
+#toggle {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+ul li {
+    border-bottom: 1px solid var(--black);
+}
+
+ul li a {
+    display: block;
+    padding: 15px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#toggle:checked ~ label {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#toggle:checked ~ ul {
+    display: block;
+    background-color: var(--teal);
+}
+
+main {
+    width: 100%;
+    margin: 0 1rem;
+}
