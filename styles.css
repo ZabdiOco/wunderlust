@@ -573,4 +573,15 @@ footer a {
         position: absolute;
         right: 20px;
     }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    footer p, footer a{
+        font-size: small;
+    }
 }
