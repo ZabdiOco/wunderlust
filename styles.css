@@ -438,6 +438,12 @@ select:focus + .focus {
     font-weight: 700;
 }
 
+#mySubmit:hover{
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--purple);
+}
+
 footer {
     background-color: var(--light-gray);
     text-align: center;
@@ -451,4 +457,120 @@ footer p {
 footer a {
     padding: 0.25rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: 33% auto;
+        grid-template-rows: 35% auto;
+        justify-items: start;
+    }
+
+    #logo {
+        grid-row: 1 / span 2;
+    }
+    
+    nav {
+        background-color: transparent;
+        color: var(--black);
+        width: 100%;
+        grid-row: 4 / span 2;
+    }
+    
+    #menu-toggle {
+        position:relative;
+        padding: 0;
+    }
+
+    #menu-toggle label {
+        display: none;
+    }
+
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.25rem 0.75rem;
+    }
+
+    ul li {
+        border-bottom: none;
+        background-color: var(--white);
+        margin: auto;
+        padding: auto;
+    }
+    
+    ul li a {
+        font-size: 1ch;
+    }
+
+    .active {
+        background-color: var(--yellow);
+    }
+    
+    ul li a:hover {
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+
+    #img-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow:visible;
+        padding: 0rem 1rem;
+    }
+
+    #img-grid picture {
+        grid-column: 1 / span 2;
+    }
+
+    #plan div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #testimonials div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #about div {
+        display: inline-flex;
+    }
+
+    #about img {
+        height: 30%;
+        width: 90%;
+        align-items: center;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .radio-control {
+        padding-right: 4rem;
+    }
+
+    .custom-select {
+        min-width: 50%;
+        max-width: 82%;
+        line-height: 2.5;
+    }
+
+    form {
+        position: relative;
+        padding-bottom: 5rem;
+    }
+
+    #mySubmit {
+        width: 40%;
+        position: absolute;
+        right: 20px;
+    }
 }
